@@ -1,0 +1,18 @@
+//Author: Manas Sarma
+//Project Euler-Problem 16
+public class SumOfDigits {
+
+	public static void main(String[] args) {
+		System.out.println(Math.pow(2, 1000));
+		long power = (long) Math.pow(2, 1000);
+		String s = Long.toString(power);
+		char[] charArray = s.toCharArray();
+		long sum = 0;
+		long num = (long) Math.pow(2, 1000);
+		while (num > 0) {
+			sum = sum + num % 10;
+			num = num / 10;
+		}
+		System.out.println(sum);
+	}
+}
