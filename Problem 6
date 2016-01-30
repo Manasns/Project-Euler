@@ -1,17 +1,17 @@
+//Author: Manas Sarma
+//Project Euler-Problem 6
 public class SumSquareDifference {
 
 	public static void main(String[] args) {
 		int sum = 0;
-		for (int i = 1; i <= 100; i++) {
-			sum += i^2;
-		}
-		System.out.println(sum);
 		int count = 0;
-		for (int j = 1; j <= 100; j++) {
-			count += j;
+		for (int i = 1; i <= 100; i++) {
+			sum += Math.pow(i, 2);//sum of squares
+			count += i;//sum of the first 100 natural numbers	
 		}
-		System.out.println(count^2);
-		System.out.println(sum - count^2);
+		System.out.println(sum);//sum of squares
+		System.out.println(Math.pow(count, 2));//square of sum
+		System.out.println(Math.pow(count, 2) - sum);//end result
 	}
 
 }
