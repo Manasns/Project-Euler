@@ -1,0 +1,18 @@
+//Author: Manas Sarma
+//Project Euler-Problem 21
+public class AmicableNumbers {
+
+	public static void main(String[] args) {
+		int n = 10000;
+		int sum = 0;
+		for(int i = 1; i <= n; i++) {
+			if((n % i == 0) && (i < n)) {
+				System.out.println(i);
+				sum += i;
+			}
+		}
+		System.out.println("Sum = " + sum);
+		System.out.println("The correct answer is " + sum);
+		//The correct answer is 14211
+	}
+}
