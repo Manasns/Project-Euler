@@ -16,3 +16,4 @@ public class SumOfDigits {
 		System.out.println(sum);
 	}
 }
+//The correct answer is 88.
