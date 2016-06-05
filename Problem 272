@@ -1,0 +1,17 @@
+//Author: Manas Sarma
+//Project Euler-Problem 272
+
+public class ModularCubes1 {
+
+	public static void main(String[] args) {
+		int count = 0;
+		int sum = 0;
+		for(double i = 2; i < (double)13082761331670030.0; i++) {
+			if(Math.pow(i, 3) % (double)13082761331670030.0 == 1)
+				sum += i;
+		}
+		System.out.println(sum);
+
+	}
+
+}
