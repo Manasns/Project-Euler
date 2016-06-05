@@ -1,0 +1,19 @@
+//Author: Manas Sarma
+//Project Euler-Problem 29
+
+public class DistinctPowers {
+
+	public static void main(String[] args) {
+		int count = -1;
+		for(int a = 2; a <= 100; a++) {
+			for(int b = 2; b <= 100; b++) {
+				System.out.println(Math.pow(a, b));
+				count++;
+			}
+			//System.out.println(count);
+		}
+		System.out.println(count);
+		System.out.println("The correct answer is " + count);
+	}
+}
+
