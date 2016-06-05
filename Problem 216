@@ -1,0 +1,27 @@
+//Author: Manas Sarma
+//Project Euler-Problem 216
+
+public class Primality {
+
+	public static void main(String[] args) {
+		int count = 0;
+		for(int i = 2; i <= 50*Math.pow(10, 6); i++) {
+			if(isPrime((long) (2*Math.pow(i, 2) - 1))) {
+				System.out.println(2*Math.pow(i, 2) - 1);
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+	
+	public static boolean isPrime(long j) {
+		if(j <= 1)
+			return false;
+		for(long k = 2; k <= j/2; k++) {
+			if(j % k == 0)
+				return false;
+		}
+		return true;
+	}
+
+}
