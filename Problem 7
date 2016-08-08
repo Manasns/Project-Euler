@@ -4,14 +4,16 @@
 public class TenThousandFirstPrime {
 
 	public static void main(String[] args) {
-		int[] primes = new int[10010];
+		int[] primes = new int[10001];
 		for(int i = 0; i <= primes.length - 1; i++) {
 			for(int j = 1; j <= 1000000; j++) {
-				if(isPrime(j))
+				if(isPrime(j)) {
 					primes[i] = j;
+					System.out.println(primes[i]);
+					System.out.println(primes[10000]);
+				}
 			}
 		}
-		System.out.println(primes[10000]);
 	}
 	
 	public static boolean isPrime(long j) {
